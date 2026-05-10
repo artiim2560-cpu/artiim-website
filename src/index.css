@@ -273,7 +273,32 @@ img {
   }
 
   :root {
-    --font-size-hero: 3rem;
+    --font-size-hero: 2.25rem;
+    --font-size-3xl: 1.5rem;
+  }
+
+  /* Hide nav links on mobile */
+  .nav-pill-link {
+    display: none;
+  }
+  
+  .nav-pill-container {
+    padding: 0.25rem;
+  }
+  
+  .nav-pill-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    margin-left: 0 !important;
+  }
+  
+  .container {
+    padding: 0 1.25rem;
+    overflow-x: hidden;
+  }
+  
+  .p-6 {
+    padding: 1rem;
   }
 }
 
