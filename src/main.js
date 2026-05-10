@@ -64,7 +64,35 @@ function initScrollReveal() {
   revealElements.forEach(el => observer.observe(el));
 }
 
+// ========== MOBILE MENU TOGGLE ==========
+function initMobileMenu() {
+  const menuBtn = document.querySelector('#mobile-menu-btn');
+  const closeBtn = document.querySelector('#mobile-menu-close');
+  const overlay = document.querySelector('#mobile-menu-overlay');
+  const navLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-cta');
+
+  if (menuBtn && overlay) {
+    const openMenu = () => {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeMenu = () => {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    menuBtn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  }
+}
+
 // Initialize after DOM is rendered
 requestAnimationFrame(() => {
   initScrollReveal();
+  initMobileMenu();
 });
