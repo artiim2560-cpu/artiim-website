@@ -239,7 +239,7 @@ Website Design/
 | **Subtext**      | Pick a time that works for you. 20 minutes — we map out exactly what we can automate for your business and give you a clear price. No obligation. |
 | **Embed**        | Cal.com inline embed (dark theme, month view)                                           |
 | **Cal Link**     | `artiim-5afvkk/20-minutes-consultation-call`                                            |
-| **Trust Badges** | • No commitment required • 30-minute session • 100% Free                                |
+| **Trust Badges** | • No commitment required • 20-minute session • 100% Free                                |
 | **Footer**       | © 2026 Artiim. All rights reserved.                                                     |
 
 
