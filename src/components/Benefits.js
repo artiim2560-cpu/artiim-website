@@ -36,7 +36,7 @@ export default function Benefits() {
         <p class="text-muted text-lg mb-12">
           The same team. The same hours. Completely different output.
         </p>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem;">
+        <div class="benefits-grid">
           ${benefits.map((b, i) => `
             <div class="reveal ${directions[i]} reveal-delay-${i + 1}" style="
               background: #111111;
