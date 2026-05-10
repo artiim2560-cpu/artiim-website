@@ -528,11 +528,11 @@ img {
 
 .decor-circle {
   border-radius: 50%;
-  border: 1px dashed rgba(0, 0, 0, 0.1);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
   position: absolute;
 }
 
-/* Utilities */
+/* ========== UTILITY CLASSES ========== */
 .text-white {
   color: #ffffff !important;
 }
@@ -541,8 +541,44 @@ img {
   position: relative;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-50 {
+  z-index: 9999;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+.inset-0 {
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 /* Floating Navigation Pill Styles */
@@ -553,7 +589,6 @@ img {
   box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.02);
   border-radius: 9999px;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
-  /* Left padding for links, right for button */
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1174,23 +1209,103 @@ img {
 /* Mobile CTA section fix */
 @media (max-width: 768px) {
   .text-5xl {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.2;
   }
 
   .text-xl {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   /* Ensure CTA button doesn't overflow on mobile */
   .btn.btn-primary.rounded-full {
-    padding: 0.875rem 1.75rem;
-    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
     white-space: nowrap;
   }
 
-  /* Ensure all sections contain their content */
+  /* Hero section mobile adjustments */
+  .py-32 {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  .min-h-\[90vh\] {
+    min-height: 70vh;
+  }
+
+  .max-w-4xl {
+    max-width: 100%;
+  }
+
+  .max-w-2xl {
+    max-width: 100%;
+  }
+
+  /* Ensure all sections clip their content properly */
+  main {
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+  }
+
   section {
     overflow: hidden;
+    position: relative;
+  }
+
+  /* Ensure the fixed navbar always stays on top */
+  nav.fixed {
+    z-index: 9999;
+  }
+
+  /* Hero heading on mobile */
+  h1 {
+    font-size: 2rem !important;
+    line-height: 1.25;
+  }
+
+  /* Hero subtext on mobile */
+  .text-xl.text-muted {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  /* CTA section heading on mobile */
+  .py-20 h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  /* Reduce section vertical spacing on mobile */
+  .py-20 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .mb-12 {
+    margin-bottom: 2rem;
+  }
+
+  .mb-8 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Process steps mobile */
+  .process-step {
+    padding-left: 2rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --font-size-hero: 3rem;
+  }
+
+  .text-5xl {
+    font-size: 2.25rem;
   }
 }
