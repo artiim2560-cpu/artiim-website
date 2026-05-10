@@ -32,25 +32,27 @@ export default function Benefits() {
   return `
     <section id="benefits" class="py-16">
       <div class="container text-center">
-        <h2 class="text-4xl font-bold mb-12">Why Automation Matters</h2>
-        
+        <h2 class="text-4xl font-bold mb-6">What changes when you stop <br/> doing it manually</h2>
+        <p class="text-muted text-lg mb-12">
+          The same team. The same hours. Completely different output.
+        </p>
         <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem;">
           ${benefits.map((b, i) => `
             <div class="reveal ${directions[i]} reveal-delay-${i + 1}" style="
-              background: #ffffff;
-              border: 1px solid #ebebeb;
+              background: #111111;
+              border: 1px solid #222222;
               border-radius: 1rem;
               padding: 1.75rem 1.25rem;
               text-align: center;
               transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
               cursor: default;
-            " onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px -8px rgba(0,0,0,0.1)';this.style.borderColor='#d4d4d4';this.querySelector('.benefit-icon').style.background='#000';this.querySelector('.benefit-icon').style.borderColor='#000';this.querySelector('.benefit-icon svg').style.stroke='white';" onmouseout="this.style.transform='';this.style.boxShadow='';this.style.borderColor='#ebebeb';this.querySelector('.benefit-icon').style.background='#f5f5f5';this.querySelector('.benefit-icon').style.borderColor='#e5e5e5';this.querySelector('.benefit-icon svg').style.stroke='currentColor';">
+            " onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px -8px rgba(0,0,0,0.5)';this.style.borderColor='#444444';this.querySelector('.benefit-icon').style.background='#ffffff';this.querySelector('.benefit-icon').style.borderColor='#ffffff';this.querySelector('.benefit-icon svg').style.stroke='black';" onmouseout="this.style.transform='';this.style.boxShadow='';this.style.borderColor='#222222';this.querySelector('.benefit-icon').style.background='#222222';this.querySelector('.benefit-icon').style.borderColor='#333333';this.querySelector('.benefit-icon svg').style.stroke='currentColor';">
               
-              <div class="benefit-icon" style="width: 48px; height: 48px; border-radius: 12px; background: #f5f5f5; border: 1px solid #e5e5e5; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; transition: all 0.3s ease;">
+              <div class="benefit-icon" style="width: 48px; height: 48px; border-radius: 12px; background: #222222; border: 1px solid #333333; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; transition: all 0.3s ease;">
                 ${b.icon}
               </div>
               <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; font-family: var(--font-family-heading);">${b.title}</h3>
-              <p style="font-size: 0.875rem; color: #666; line-height: 1.6;">${b.desc}</p>
+              <p style="font-size: 0.875rem; color: #a3a3a3; line-height: 1.6;">${b.desc}</p>
             </div>
           `).join('')}
         </div>

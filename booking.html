@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book a Meeting — Advytize</title>
+    <title>Book a Meeting — Artiim</title>
     <meta name="description"
-        content="Schedule a free consultation with Advytize to discuss your AI automation needs." />
+        content="Schedule a free consultation with Artiim to discuss your AI automation needs." />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +29,7 @@
         }
 
         body {
-            font-family: sans-serif;
+            font-family: 'Inter', sans-serif;
             background: #000;
             color: #fff;
             min-height: 100vh;
@@ -43,13 +47,14 @@
         }
 
         .booking-logo {
-            font-family: sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 1.75rem;
             font-weight: 900;
             color: #fff;
             text-decoration: none;
             letter-spacing: -0.05em;
         }
+
 
         .booking-back {
             display: flex;
@@ -80,7 +85,7 @@
         }
 
         .booking-heading h1 {
-            font-family: sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 2.25rem;
             font-weight: 750;
             margin-bottom: 0.75rem;
@@ -99,11 +104,12 @@
         .calendar-wrapper {
             width: 100%;
             max-width: 700px;
-            background: #fff;
+            background: #0a0a0a;
             border-radius: 1.25rem;
             overflow: hidden;
-            box-shadow: 0 25px 80px -12px rgba(255, 255, 255, 0.08);
+            box-shadow: 0 25px 80px -12px rgba(0, 0, 0, 0.5);
             min-height: 520px;
+            border: 1px solid rgba(255,255,255,0.05);
         }
 
         /* Footer */
@@ -165,7 +171,7 @@
 
     <!-- Header -->
     <header class="booking-header">
-        <a href="/" class="booking-logo">Advytize.</a>
+        <a href="/" class="booking-logo">Artiim.</a>
         <a href="/" class="booking-back">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -180,7 +186,8 @@
     <main class="booking-main">
         <div class="booking-heading">
             <h1>Schedule a Free Consultation</h1>
-            <p>Pick a time that works for you. We'll discuss how AI automation can transform your business operations.
+            <p>Pick a time that works for you. 
+            20 minutes — we map out exactly what we can automate for your business and give you a clear price. No obligation.
             </p>
         </div>
 
@@ -217,7 +224,7 @@
 
     <!-- Footer -->
     <footer class="booking-footer">
-        &copy; 2026 Advytize. All rights reserved.
+        &copy; 2026 Artiim. All rights reserved.
     </footer>
 
     <!-- Cal.com Inline Embed Script -->
@@ -249,16 +256,16 @@
 
         Cal.ns.booking("inline", {
             elementOrSelector: "#cal-embed",
-            calLink: "samyak-4hmhgu/30min",
+            calLink: "artiim-5afvkk/20-minutes-consultation-call",
             layout: "month_view",
             config: {
-                theme: "light"
+                theme: "dark"
             }
         });
 
         Cal.ns.booking("ui", {
             styles: {
-                branding: { brandColor: "#000000" }
+                branding: { brandColor: "#ffffff" }
             },
             hideEventTypeDetails: false,
             layout: "month_view"
