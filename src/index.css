@@ -1108,3 +1108,89 @@ img {
 .hamburger-btn:hover span {
   background: #a3a3a3;
 }
+
+/* Missing utility classes */
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.min-h-\[90vh\] {
+  min-height: 90vh;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+
+/* Mobile CTA section fix */
+@media (max-width: 768px) {
+  .text-5xl {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .text-xl {
+    font-size: 1rem;
+  }
+
+  /* Ensure CTA button doesn't overflow on mobile */
+  .btn.btn-primary.rounded-full {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  /* Ensure all sections contain their content */
+  section {
+    overflow: hidden;
+  }
+}
