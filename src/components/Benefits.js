@@ -32,7 +32,7 @@ export default function Benefits() {
   return `
     <section id="benefits" class="py-16">
       <div class="container text-center">
-        <h2 class="text-4xl font-bold mb-6">What changes when you stop <br/> doing it manually</h2>
+        <h2 class="text-4xl font-bold mb-6 max-w-2xl mx-auto">What changes when you stop doing it manually</h2>
         <p class="text-muted text-lg mb-12">
           The same team. The same hours. Completely different output.
         </p>
