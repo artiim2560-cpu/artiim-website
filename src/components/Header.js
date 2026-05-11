@@ -1,15 +1,15 @@
 export default function Header() {
   return `
-    <nav class="fixed top-0 w-full z-50 p-6 pointer-events-none">
+    <nav class="absolute top-0 w-full z-50 p-6">
       <div class="container flex justify-between items-center bg-transparent">
         
         <!-- Logo -->
-        <a href="/" class="pointer-events-auto" style="font-size: 2rem; font-family: var(--font-family-heading); font-weight: 900; letter-spacing: -0.05em; color: white;">
+        <a href="/" style="font-size: 2rem; font-family: var(--font-family-heading); font-weight: 900; letter-spacing: -0.05em; color: white;">
           Artiim.
         </a>
         
         <!-- Desktop Nav -->
-        <div class="hidden md:flex pointer-events-auto nav-pill-container">
+        <div class="hidden md:flex nav-pill-container">
           <a href="/" class="nav-pill-link">Home</a>
           <a href="#services" class="nav-pill-link">Services</a>
           <a href="#benefits" class="nav-pill-link">Benefits</a>
@@ -20,7 +20,7 @@ export default function Header() {
         </div>
 
         <!-- Mobile Menu Toggle -->
-        <button id="mobile-menu-btn" class="md:hidden pointer-events-auto hamburger-btn" aria-label="Toggle menu">
+        <button id="mobile-menu-btn" class="md:hidden hamburger-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu-overlay">
           <span></span>
           <span></span>
           <span></span>

@@ -23,8 +23,8 @@ export default function Process() {
        <div class="container">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div class="reveal reveal-left">
-               <h2 class="text-4xl font-bold mb-6">How we transform <br/> your business.</h2>
-               <p class="text-muted text-lg mb-8">
+               <h2 class="text-4xl font-bold mb-6 mobile-text-center">How we transform <br/> your business.</h2>
+               <p class="text-muted text-lg mb-8 mobile-text-center">
                  Four steps. No fluff. From first call to going live in under two weeks.
                </p>
             </div>

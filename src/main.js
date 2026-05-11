@@ -74,11 +74,13 @@ function initMobileMenu() {
   if (menuBtn && overlay) {
     const openMenu = () => {
       overlay.classList.add('active');
+      menuBtn.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
     };
 
     const closeMenu = () => {
       overlay.classList.remove('active');
+      menuBtn.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
     };
 
