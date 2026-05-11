@@ -30,7 +30,7 @@ export default function Benefits() {
   const directions = ['reveal-left', 'reveal-bottom', 'reveal-bottom', 'reveal-bottom', 'reveal-right'];
 
   return `
-    <section id="benefits" class="py-16">
+    <section id="benefits" class="py-20">
       <div class="container text-center">
         <h2 class="text-4xl font-bold mb-6">What changes when you stop <br/> doing it manually</h2>
         <p class="text-muted text-lg mb-12">
