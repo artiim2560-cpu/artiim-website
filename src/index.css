@@ -651,6 +651,10 @@ img {
 }
 
 /* Process Line */
+.process-section {
+  padding-bottom: 8rem;
+}
+
 .process-step {
   position: relative;
   padding-left: 3rem;
@@ -1296,6 +1300,10 @@ img {
   }
 
   /* Process steps mobile */
+  .process-section {
+    padding-bottom: 5rem;
+  }
+
   .process-step {
     padding-left: 2rem;
     padding-bottom: 2.5rem;

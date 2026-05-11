@@ -19,7 +19,7 @@ export default function Process() {
   ];
 
   return `
-    <section id="process" class="py-20 relative" style="background: var(--color-surface);">
+    <section id="process" class="process-section py-20 relative" style="background: var(--color-surface);">
        <div class="container">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div class="reveal reveal-left">
